@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet" />
     <title>F1 Drivers API</title>
 </head>
 <body>
-    <header>
-        <h2>F1 Drivers</h2>
+    <header class="bg-gray-700 text-white p-4">
+        <h2 class="text-lg font-semibold">F1 Drivers</h2>
     </header>
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Route</th>
-                    <th>Method</th>
-                    <th>Description</th>
-                    <th>Example</th>
+    <main class="p-4 w-1/2 m-auto">
+        <table class="table border-2 mt-4">
+            <thead class="table-header-group border-2">
+                <tr class="bg-gray-600">
+                    <th class="table-cell p-3 text-center">Route</th>
+                    <th class="table-cell p-3 text-center">Method</th>
+                    <th class="table-cell p-3 text-center">Description</th>
+                    <th class="table-cell p-3 text-center">Example</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>/drivers</td>
-                    <td>GET</td>
-                    <td>Gets a list of F1 Drivers and Information about them</td>
-                    <td><a href="/drivers">List Drivers</a></td>
+            <tbody class="table-row-group">
+                <tr class="border-2">
+                    <td class="table-cell p-3 text-center">/drivers</td>
+                    <td class="table-cell p-3 text-center">GET</td>
+                    <td class="table-cell p-3 text-center">Gets a list of F1 Drivers and Information about them</td>
+                    <td class="table-cell p-3 text-center"><a class="text-blue-700" href="/drivers">List Drivers</a></td>
                 </tr>
-                <tr>
-                    <td>/drivers/:id</td>
-                    <td>GET</td>
-                    <td>Gets a single F1 Driver and Information about them</td>
-                    <td><a href="/drivers/1">Get Single Driver</a></td>
+                <tr class="border-2">
+                    <td class="table-cell p-3 text-center">/drivers/:id</td>
+                    <td class="table-cell p-3 text-center">GET</td>
+                    <td class="table-cell p-3 text-center">Gets a single F1 Driver and Information about them</td>
+                    <td class="table-cell p-3 text-center"><a class="text-blue-700" href="/drivers/1">Get Single Driver</a></td>
                 </tr>
             </tbody>
         </table>
